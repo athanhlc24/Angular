@@ -1,0 +1,22 @@
+<button type="button" (click)="hanoi()"> Hà Nội</button>
+<button type="button" (click)="london()"> Lon Don</button>
+<button type="button" (click)="saigon()"> Sài Gòn</button>
+<button type="button" (click)="paris()"> New York</button>
+<form (submit)="getData()">
+  <input type="text" name="cityCode" [(ngModel)]="cityCode"/>
+  <button type="submit">Check Weather</button>
+
+</form>
+<h3>{{cityCode}}</h3>
+<div>
+<p>Thành Phố : {{data.name}},{{data.sys.country}}</p>
+<p>Nhiệt Độ: {{data.main.temp}}<sup>o</sup>C</p>
+<p>Độ ẩm: {{data.main.humidity}}</p>
+<p>Tốc Độ Gió: {{data.wind.speed}}</p>
+<p>Mô Tả: {{data.weather[0].description}}</p>
+<img  style="transform: translate(150px, -200px)" src="http://openweathermap.org/img/wn/04n@2x.png"/>
+</div>
+
+
+
+
