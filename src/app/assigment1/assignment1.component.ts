@@ -5,7 +5,7 @@ import {WeatherService} from "../services/weather.service";
 
 @Component({
   selector: 'app-assignment1',
-  templateUrl:'./assignment.component.html'
+  templateUrl:'./assignment1.component.html'
 })
 export class Assignment1Component{
   mails: Imail[] = [
@@ -29,7 +29,7 @@ export class Assignment1Component{
     var new_list: Imail[] = [];
     this.weatherService.mailList().subscribe(value => {
       for (var i = 0; i<value.data.mails.length;i++){
-        if(value.data.mails[i].category ==category && value.data.mails[i].child == child){
+        if(value.data.mails[i].category == category && value.data.mails[i].child == child){
           new_list.push(value.data.mails[i]);
         }
       }
