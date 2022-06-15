@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+  width: 1200px;
+  margin: auto 0px;
+
+}
+.category{
+  width: calc(30% - 80px);
+
+  float: left;
+
+}
+.categories{
+  width: 100%;
+  text-align: left;
+}
+.emails{
+  width: calc(60% - 80px);
+  background-color: green;
+  float: left;
+}
+.childs{
+  text-align: center;
+  width: 100%;
+}
+.image{
+  width: 20%;
+  background-color: red;
+  float: left;
+  border-radius: 50%;
+}
+.content{
+  width: 80%;
+  background-color: cadetblue;
+  float: left;
+}
+p{
+  line-height: 5px;
+}

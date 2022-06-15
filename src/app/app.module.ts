@@ -10,6 +10,7 @@ import {WeatherComponent} from "./weather/weather.component";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
+import {EmailComponent} from "./email/email.component";
 
 const appRouters: Routes = [
   {
@@ -31,7 +32,8 @@ const appRouters: Routes = [
     StudentComponent,
     ProductComponent,
     ProductsComponent,
-    WeatherComponent
+    WeatherComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
