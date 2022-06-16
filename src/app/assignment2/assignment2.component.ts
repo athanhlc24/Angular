@@ -1,5 +1,5 @@
 import {Component} from "@angular/core";
-import {Session2Interface} from "../interfaces/session2.interface";
+import {ss2} from "../interfaces/session2.interface";
 
 
 @Component({
@@ -7,11 +7,11 @@ import {Session2Interface} from "../interfaces/session2.interface";
   templateUrl:'./assignment2.component.html',
 })
 export class Assignment2Component{
-  contents: Session2Interface[] = [
-    {tieu_de: 'Task1', noi_dung:'Analyze',},
-    {tieu_de: 'Task2', noi_dung:'Analyze123',},
-    {tieu_de: 'Task3', noi_dung:'Analyze123123',},
-    {tieu_de: 'Task4', noi_dung:'Analyze123123',}
+  contents:  ss2[]=[
+    {title:'To Do', task: 'Task 1',content:'Analdiluy'},
+    {title:'In Proges ', task: 'Task 2',content:'kubet'},
+    {title:'In Rewiew', task: 'Task 3',content:'thabet'},
+    {title:'Done', task: 'Task 4',content:'f88'}
   ]
 }
 

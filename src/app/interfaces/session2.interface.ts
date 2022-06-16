@@ -1,4 +1,5 @@
-export interface Session2Interface{
-  tieu_de: string,
-  noi_dung:string,
+export interface ss2{
+  title: string,
+  task: string,
+  content: string,
 }
