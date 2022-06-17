@@ -2,7 +2,8 @@ li{
   list-style: none;
 }
 .avatar{
-  float: left;
+  float: top;
+
 }
 .avatar i{
   line-height: 75px;
@@ -30,3 +31,4 @@ li{
   margin-top: 20px;
   border: 2px solid red;
 }
+

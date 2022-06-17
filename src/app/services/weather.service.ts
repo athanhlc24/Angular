@@ -2,6 +2,8 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 import {IWeather} from "../interfaces/weather.interface";
 import {Injectable} from "@angular/core";
 import {IDataJSON} from "../interfaces/category.interface";
+import {ss2} from "../interfaces/session2.interface";
+import {thiAngular} from "../interfaces/thiAngular.interface";
 @Injectable({
   providedIn: 'root',
 })
@@ -31,6 +33,12 @@ export class WeatherService{
   }
   mailList(){
     return this.httpClient.get<IDataJSON>('http://localhost:4200/assets/data.json');
+  }
+  ss2(){
+    return this.httpClient.get<ss2>('http://localhost:4200/assets/assignment2.json')
+  }
+  thiAngular(){
+    return this.httpClient.get<thiAngular>('http://localhost:4200/assets/thiAngular.json')
   }
 }
 
